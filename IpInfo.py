@@ -10,10 +10,10 @@ while True:
         data = response.read()
         values = json.loads(data)
 
-        # Print the full response for debugging
+
         print("Full response: ", values)
 
-        # Accessing values safely using .get()
+
         print("IP: " + values.get("query", "Not found"))
         print("City: " + values.get("city", "City not found"))
         print("ISP: " + values.get("isp", "ISP not found"))
